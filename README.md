@@ -1,102 +1,116 @@
-# Prompt Analyzer
 
-A full-stack application for analyzing and managing AI prompts, featuring a Node.js backend and a React frontend.
+# 🚀 Prompt Compliance Analyzer
 
-## Prerequisites
+A full-stack application for analyzing, classifying, and validating AI prompts. Combines a Node.js backend with a modern React + TypeScript frontend, providing a powerful framework to filter, categorize, and monitor prompt content in real time.
 
-- Node.js (v16 or higher) and npm (comes with Node.js)
-  - Recommended: Install using [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) for easy version management
+## ✨ Features
 
-## Getting Started
+- **Prompt Engineering Tools**: apply temperature control, few-shot examples, and risk evaluation  
+- **Compliance Classification**: flag prompts with categories, risk levels, and compliance status  
+- **Manipulation Detection**: identify attempts to bypass content policies  
+- **Output Validation**: ensure JSON-formatted, consistent responses  
+- **Modern UI**: built with React, Tailwind CSS, shadcn-ui, and Vite  
 
-### 1. Clone the Repository
+## 📦 Prerequisites
+
+- Node.js (v16+ recommended)  
+  - Suggest using [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) for version management
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/prompt-analyzer.git
-cd prompt-analyzer
+git clone https://github.com/your-username/prompt-compliance-analyzer.git
+cd prompt-compliance-analyzer
 ```
 
-### 2. Set Up Environment Variables
+### 2️⃣ Configure environment variables
 
-1. Copy the example environment file:
-   ```bash
-   cp .env.example .env
-   ```
-2. Update the `.env` file with your specific configuration (API keys, database URLs, etc.)
+```bash
+cp .env.example .env
+```
 
-### 3. Install Dependencies
+Edit `.env` with your own secrets (API keys, DB URLs, etc.)
 
-#### Backend Dependencies
-From the project root:
+### 3️⃣ Install dependencies
+
+#### Backend
+
 ```bash
 npm install
 ```
 
-#### Frontend Dependencies
+#### Frontend
+
 ```bash
 cd app
 npm install
 cd ..
 ```
 
-### 4. Running the Application
+### 4️⃣ Run the application
 
-#### Development Mode
+#### Development mode
 
-1. Start the backend server (from project root):
-   ```bash
-   npm run dev
-   ```
-   The backend will be available at `http://localhost:3000`
+- Start backend:
+  ```bash
+  npm run dev
+  ```
+  → available at [http://localhost:3000](http://localhost:3000)
 
-2. In a new terminal, start the frontend development server:
-   ```bash
-   cd app
-   npm run dev
-   ```
-   The frontend will be available at `http://localhost:5173` (or the next available port)
+- Start frontend (in a new terminal):
+  ```bash
+  cd app
+  npm run dev
+  ```
+  → available at [http://localhost:5173](http://localhost:5173)
 
-#### Production Build
+#### Production build
 
-1. Build the frontend:
-   ```bash
-   cd app
-   npm run build
-   ```
+```bash
+cd app
+npm run build
+```
 
-2. The built files will be in the `app/dist` directory, which can be served by your backend.
+→ production files will be in `app/dist`
 
-## Project Structure
+## 🗂 Project Structure
 
-- `/` - Backend (Node.js/Express)
-  - `server.js` - Main server file
-  - `index.js` - Application entry point
-  - `/utils` - Utility functions and helpers
-- `/app` - Frontend (React + Vite)
-  - `/src` - React application source code
-  - `vite.config.js` - Vite configuration
+```
+/
+  server.js
+  index.js
+  utils/
+  prompts/
+  app/
+    src/
+      components/
+      hooks/
+      lib/
+      pages/
+    public/
+    vite.config.ts
+```
 
-## Technologies Used
+- **Backend**: Node.js (Express) with prompt classification logic  
+- **Frontend**: React + Vite + shadcn-ui components for modern, modular UI  
+- **prompts/**: contains prompt examples and system messages  
+- **utils/**: helper scripts for validating LLM output  
 
-### Backend
-- Node.js
-- Express
+## 🛠 Technologies
 
-### Frontend
-- React
-- TypeScript
-- Vite
-- shadcn-ui
-- Tailwind CSS
+- **Backend**: Node.js, Express  
+- **Frontend**: React, TypeScript, Tailwind CSS, shadcn-ui, Vite
 
-## Contributing
+## 🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
+1. Fork the repository  
+2. Create a feature branch (`git checkout -b feature/your-feature`)  
+3. Commit your changes (`git commit -m 'Add your feature'`)  
+4. Push to GitHub (`git push origin feature/your-feature`)  
 5. Open a Pull Request
 
-## License
+## 📄 License
 
-[Your chosen license here]
+[MIT](LICENSE) (or update with your chosen license)
