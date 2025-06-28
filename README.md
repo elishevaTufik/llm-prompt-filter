@@ -1,5 +1,5 @@
 
-# 🚀 Prompt Compliance Analyzer
+# LLM Prompt Filter
 
 A full-stack application for analyzing, classifying, and validating AI prompts. Combines a Node.js backend with a modern React + TypeScript frontend, providing a powerful framework to filter, categorize, and monitor prompt content in real time.
 
